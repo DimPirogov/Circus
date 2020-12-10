@@ -1,0 +1,6 @@
+color scheme
+	blue: 		0x557475
+	light yellow:	0xf4e7b3
+	dark yellow:	0xf8b936
+	red:		0xc42b26
+	dark red:	0x5c1113
