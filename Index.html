@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="cirkus.css">
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/cirkus.js"></script>
 </head>
 <body>
 
 <header>
-    <nav class="navbar flex-md-nowrap navbar-expand-md navbar-dark fixed-top bg-dark">
+    <nav class="navbar flex-md-nowrap navbar-expand-md navbar-dark fixed-top bg-dark" id="cirkusNavBar">
         <div class="container">
-            <img src="images/logo.png" class="position-fixed sticky-top col-xl-2 col-lg-2 col-md-2 col-sm-3 col-2">
+            <img src="images/logo.png" class="position-fixed sticky-top" id="logoImg">
             <button class="navbar-toggler ms-auto" 
                     type="button" 
                     data-toggle="collapse" 
@@ -43,11 +44,7 @@
             </div>
         </div>
     </nav>
-    <!--div class="container position-fixed sticky-top">
-        <a href="index.html"><img src="images/logo.png" class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-2"></a>
-    </div-->
 </header>
-<p></p>
 <main role="main">
     <div class="jumbotron">
         <video autoplay muted loop poster="images/bg1.jpg">
@@ -57,9 +54,9 @@
 
     <div class="container">
         <div class="row p-3">
-            <div class="col-md-8 yellow-bglc">
+            <div class="col-md-7 yellow-bglc">
                 <h3>Next Upcoming Shows!</h3>
-                <div class="text-white p-3 m-3 rounded blue-bglc">
+                <div class="text-white p-3 m-1 rounded blue-bglc">
                     <h4>Brazilian Capoeira (2020-12-18)</h4>
                     <img src="images/capoeira.jpg" class="img-fluid shadow p-0 mb-5 rounded">
                     <p>
@@ -69,7 +66,7 @@
                         <button type="submit" class="btn btn-primary">Book now!</button>
                     </p>
                 </div>
-                <div class="text-white p-3 m-3 rounded blue-bgdc">
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
                     <h4>Fire reathing (2002-12-19)</h4>
                     <img src="images/Fire_breathing.jpg" class="img-fluid shadow p-0 mb-5 rounded">
                     <p>
@@ -79,21 +76,21 @@
                         <button type="submit" class="btn btn-primary">Book now!</button>
                     </p>
                 </div>
-                <div class="text-white p-3 m-3 rounded blue-bglc">
+                <div class="text-white p-3 m-1 rounded blue-bglc">
                     <h4>Christmas special (2002-12-25)</h4>
                     <img src="images/xmas.jpg" class="img-fluid shadow p-0 mb-5 rounded">
                     <p>
-                    Our Christmas special is a special show with our best performers for your and your family.
+                    Our Christmas special is a the seasson's show with our best performers.  Come and enjoy with your family.
                     </p>
                     <p align="right">
                         <button type="submit" class="btn btn-primary">Book now!</button>
                     </p>
                 </div>
-                <div class="text-white p-3 m-3 rounded blue-bgdc">
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
                     <h4>Xmas second chance (2002-12-26)</h4>
                     <img src="images/xmas2.jpg" class="img-fluid shadow p-0 mb-5 rounded">
                     <p>
-                    Did you miss our Christmas special?  You have a second chance to enjoy with us.
+                    Did you miss our Christmas special?  You have a second chance to enjoy us.
                     </p>
                     <p align="right">
                         <button type="submit" class="btn btn-primary">Book now!</button>
@@ -101,12 +98,64 @@
                 </div>
             </div>
 
-            <div class="col-md-4 red-bglc">
+            <div class="col-md-5 red-bglc">
                 <h4>This week's lunches:</h4>
-                <h4>Checkout our menu!</h4>
-            </div>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h3>Monday: Veggy Wrapps</h3>
+                    <img src="dishes/mon.jpg" class="img-fluid shadow p-0 mb-5 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bglc">
+                    <h3>Tuesday: Grilled Lamb and Feta Pita Sandwiches</h3>
+                    <img src="dishes/tue.jpg" class="img-fluid shadow p-0 mb-5 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h3>Wednesday: Crispy Tuna Cakes</h3>
+                    <img src="dishes/wed.jpg" class="img-fluid shadow p-0 mb-5 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bglc">
+                    <h3>Thursday: Curried Chicken Salad with Apples and Raisins</h3>
+                    <img src="dishes/thu.jpg" class="img-fluid shadow p-0 mb-5 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h3>Friday: Avo-Tahini Toast</h3>
+                    <img src="dishes/fri.jpg" class="img-fluid shadow p-0 mb-5 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bglc">
+                    <h3>Saturday: Orecchiette with Broccoli Rabe</h3>
+                    <img src="dishes/sat.jpg" class="img-fluid shadow p-0 mb-5 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h3>Sunday: Sicilian Aubergine Pizzas</h3>
+                    <img src="dishes/sun.jpg" class="img-fluid shadow p-0 mb-5 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <p align="right">
+                    <button type="submit" class="btn btn-primary">Checkout our menu!</button>
+                </p>
+        </div>
         </div>
     </div>
-</main>
+</main>    
 </body>
 </html>
+
