@@ -1,0 +1,593 @@
+<html>
+    <head>
+        <Title>Circus Restaurang</title>
+            <link rel="stylesheet" type="text/css" href="tablet.css">
+            <script src="tablet.js"></script>
+    </head>
+
+    <body>
+    <!-- Header -->
+    <header id="myHeader">
+            <img src="design_ideas/logo.png">
+            <nav class="nav-bar">
+                <a href="#"  onclick="menu('starter')"> Starters </a> |
+                <a href="#" onclick="menu('maincourse')"> MainCourse </a> |
+                <a href="#" onclick="menu('desserts')" > Desserts </a>|
+                <a href="#" onclick="menu('drinks')"> Drinks </a> |
+                <a href="#" onclick="menu('kidmenu')"> Kids menu </a> 
+            </nav>
+    </header> 
+    
+    <!-- Section -->
+    <section id="section">
+        <!-- container for Starter -->
+        <div class="container" id ="starter" >
+            <div class="item" id='s1'>
+                    <div class="item-img">
+                        <div class="img">
+                            <img src="food/starters/Ceasar-salad-starter.jpg" alt="itemid">
+                        </div>
+                        <div class="itemcount">
+                            <img src="food/Plus" onclick="plus('s1', true)">
+                            <input name ="input"  id="count" value="0">
+                            <img src="food/minus.jpg" onclick="plus('s1', false)">   
+                        </div>
+                    </div>    
+                <div class="itemdescription" >
+                    <img src="food/vege.png" width="50px" height="50px">
+                    <span id="sname">Ceasar-Salad  49kr</span>
+                    <input type="hidden" id="foodid" value="49">
+                </div>
+            </div>
+
+            <div class="item" id='S2'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/starters/Chicken-lolipop-starter.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus"  onclick="plus('S2',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('S2',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <span  id="sname">Kyckling-Lolipop  69Kr</span>
+                    <input type="hidden" id="foodid" value="69">
+                </div>
+            </div>
+
+            <div class="item" id='S3'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/starters/Friend-starter.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('S3',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('S3',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/vege.png" width="50px" height="50px">
+                    <span id="sname">Friend-starter  59Kr</span>
+                    <input type="hidden" id="foodid" value="59">
+                </div>
+            </div>
+
+            <div class="item" id='S4'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/starters/Paneer-starter.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('S4',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('S4',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/vege.png" width="50px" height="50px">
+                    <span  id="sname">Paneer  59Kr</span>
+                    <input type="hidden" id="foodid" value="59">
+                </div>
+            </div>
+            <div class="item" id='S5'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/starters/Tomatsallad.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('S5',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('S5',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <span  id="sname">Tomatsallad  49Kr</span>
+                    <input type="hidden" id="foodid" value="49">
+                </div>
+
+            </div>
+            <div class="item" id='S6'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/starters/greek-salad-starter.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('S6',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg"onclick="plus('S6',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/vegan.png" width="50px" height="50px">
+                    <span id="sname">Greek-Salad 69Kr</span>
+                    <input type="hidden" id="foodid" value="69">
+                </div>
+            </div>
+        </div>
+        <!-- container for Main course -->
+        <div class="container hidden" id="maincourse">
+            <div class="item" id='s7'>
+                    <div class="item-img">
+                        <div class="img">
+                            <img src="food/maincourse/Chicken-Meal.jpg" alt="itemid">
+                        </div>
+                        <div class="itemcount">
+                            <img src="food/Plus" onclick="plus('s7', true)">
+                            <input name ="input"  id="count" value="0">
+                            <img src="food/minus.jpg" onclick="plus('s7', false)">   
+                        </div>
+                    </div>    
+                <div class="itemdescription" >
+                    <span id="sname">kyckling meal  109Kr</span>
+                    <input type="hidden" id="foodid" value="109">
+                </div>
+            </div>
+
+            <div class="item" id='s8'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/maincourse/Heart -Pizza.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus"  onclick="plus('s8',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s8',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/vege.png" width="50px" height="50px">
+                    <span  id="sname">Hjärta Pizza  99kr</span>
+                    <input type="hidden" id="foodid" value="99">
+                </div>
+            </div>
+
+            <div class="item" id='s9'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/maincourse/Mozzarella & Tomato-Stuffed Chicken.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s9',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s9',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">   
+                    <span id="sname">Tomatfylld kyckling  109Kr</span>
+                    <input type="hidden" id="foodid" value="109">
+                </div>
+            </div>
+
+            <div class="item" id='s10'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/maincourse/saglikli-pizza.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s10',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s10',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/vege.png" width="50px" height="50px">
+                    <span  id="sname">Saglikli-pizza  99Kr</span>
+                    <input type="hidden" id="foodid" value="99">
+                </div>
+            </div>
+            <div class="item" id='s11'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/maincourse/Swedish_meatballs.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s11',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s11',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription"> 
+                    <span  id="sname">Svenska köttbullar 79Kr</span>
+                    <input type="hidden" id="foodid" value="79">
+                </div>
+
+            </div>
+            <div class="item" id='s12'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/maincourse/Veg - Pasta.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s12',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg"onclick="plus('s12',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/vegan.png" width="50px" height="50px">
+                    <span id="sname">Veg-Pasta  89Kr</span>
+                    <input type="hidden" id="foodid" value="89">
+                </div>
+            </div>
+        </div>
+        <!-- container for Desserts -->
+        <div class="container hidden" id="desserts">
+            <div class="item" id='s13'>
+                    <div class="item-img">
+                        <div class="img">
+                            <img src="food/desserts/Boule_chocolat_au_crumble_de_fraises_2.jpg" alt="itemid">
+                        </div>
+                        <div class="itemcount">
+                            <img src="food/Plus" onclick="plus('s13', true)">
+                            <input name ="input"  id="count" value="0">
+                            <img src="food/minus.jpg" onclick="plus('s13', false)">   
+                        </div>
+                    </div>    
+                <div class="itemdescription" >
+                    <span id="sname">Choklad  89Kr</span>
+                    <input type="hidden" id="foodid" value="89">
+                </div>
+            </div>
+
+            <div class="item" id='s14'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/desserts/christmas-pavlova.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus"  onclick="plus('s14',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s14',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <span  id="sname">Christmas-pavlova  99kr</span>
+                    <input type="hidden" id="foodid" value="99">
+                </div>
+            </div>
+
+            <div class="item" id='s15'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/desserts/Clafoutis.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s15',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s15',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">   
+                    <span id="sname">Clafoutis 79Kr</span>
+                    <input type="hidden" id="foodid" value="79">
+                </div>
+            </div>
+
+            <div class="item" id='s16'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/desserts/Jordgubbe Osttårta -sugarfree.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s16',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s16',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/sugarfree.png" width="50px" height="50px">
+                    <span  id="sname">Jordgubbe Osttårta  99Kr</span>
+                    <input type="hidden" id="foodid" value="99">
+                </div>
+            </div>
+            <div class="item" id='s17'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/desserts/Raw Vegan Bounty Slice.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s17',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s17',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription"> 
+                    <img src="food/vegan.png" width="50px" height="50px">
+                    <span  id="sname">Bounty Slice 79Kr</span>
+                    <input type="hidden" id="foodid" value="79">
+                </div>
+
+            </div>
+            <div class="item" id='s18'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/desserts/smält tårta.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s18',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg"onclick="plus('s18',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <span id="sname">Smält tårta 79Kr</span>
+                    <input type="hidden" id="foodid" value="79">
+                </div>
+            </div>
+        </div>
+        <!-- container for Drinks -->
+        <div class="container hidden" id="drinks">
+            <div class="item" id='s19'>
+                    <div class="item-img">
+                        <div class="img">
+                            <img src="food/drinks/blueberry-lemonade-vodka-cocktail.jpg" alt="itemid">
+                        </div>
+                        <div class="itemcount">
+                            <img src="food/Plus" onclick="plus('s19', true)">
+                            <input name ="input"  id="count" value="0">
+                            <img src="food/minus.jpg" onclick="plus('s19', false)">   
+                        </div>
+                    </div>    
+                <div class="itemdescription" >
+                    <span id="sname">Blueberry vodka  89Kr</span>
+                    <input type="hidden" id="foodid" value="89">
+                </div>
+            </div>
+
+            <div class="item" id='s20'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/drinks/Christmas cocktail.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus"  onclick="plus('s20',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s20',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <span  id="sname">Christmas cocktail 99kr</span>
+                    <input type="hidden" id="foodid" value="99">
+                </div>
+            </div>
+
+            <div class="item" id='s21'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/drinks/Lemon-Gin-Fizz.jpeg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s21',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s21',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">   
+                    <span id="sname">Lemon-Gin-Fizz 79Kr</span>
+                    <input type="hidden" id="foodid" value="79">
+                </div>
+            </div>
+
+            <div class="item" id='s22'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/drinks/Orange juice.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s22',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s22',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/sugarfree.png" width="50px" height="50px">
+                    <span  id="sname">Orange juice  59Kr</span>
+                    <input type="hidden" id="foodid" value="59">
+                </div>
+            </div>
+            <div class="item" id='s23'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/drinks/Sea-Breeze-Cocktail.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s23',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s23',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription"> 
+                    <span  id="sname">Sea-Breeze-Cocktail 79Kr</span>
+                    <input type="hidden" id="foodid" value="79">
+                </div>
+
+            </div>
+            <div class="item" id='s24'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/drinks/strawberry cocktail.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s24',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg"onclick="plus('s24',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <span id="sname">Smält tårta 79Kr</span>
+                    <input type="hidden" id="foodid" value="79">
+                </div>
+            </div>
+        </div>
+         <!-- container for kid menu -->
+         <div class="container hidden" id="kidmenu">
+            <div class="item" id='s25'>
+                    <div class="item-img">
+                        <div class="img">
+                            <img src="food/kidmenu/Donut.jpg" alt="itemid">
+                        </div>
+                        <div class="itemcount">
+                            <img src="food/Plus" onclick="plus('s25', true)">
+                            <input name ="input"  id="count" value="0">
+                            <img src="food/minus.jpg" onclick="plus('s25', false)">   
+                        </div>
+                    </div>    
+                <div class="itemdescription" >
+                    <span id="sname">Donut  19Kr</span>
+                    <input type="hidden" id="foodid" value="19">
+                </div>
+            </div>
+
+            <div class="item" id='s26'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/kidmenu/Fries with Drink.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus"  onclick="plus('s26',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s26',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <span  id="sname">Fries with Drink 49kr</span>
+                    <input type="hidden" id="foodid" value="49">
+                </div>
+            </div>
+
+            <div class="item" id='s27'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/kidmenu/kid burger.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s27',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s27',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">   
+                    <span id="sname">kid burger 39Kr</span>
+                    <input type="hidden" id="foodid" value="39">
+                </div>
+            </div>
+
+            <div class="item" id='s28'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/kidmenu/kid ost pizza.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s28',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s28',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <span  id="sname">Ost pizza  59Kr</span>
+                    <input type="hidden" id="foodid" value="59">
+                </div>
+            </div>
+            <div class="item" id='s29'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/kidmenu/Kid pasta.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s29',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s29',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription"> 
+                    <span  id="sname">Pasta 59Kr</span>
+                    <input type="hidden" id="foodid" value="59">
+                </div>
+
+            </div>
+            <div class="item" id='s30'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/kidmenu/Tropical-Punch.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s30',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg"onclick="plus('s30',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/sugarfree.png" width="50px" height="50px">
+                    <span id="sname">Tropical-Punch 39Kr</span>
+                    <input type="hidden" id="foodid" value="39">
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Footer -->
+    <div class="footer" id="footer">
+        <p>Order Details </p>
+        <div>
+            <table id="order">
+                <!--tr id="iname"><th> Item-Name </th> <th> Count </th> <th> Price </th></tr-->
+                <tbody id="orderbody">
+
+                </tbody>
+            </table>
+        </div>
+        <span>Total:</span>
+        <input name ="total"  id="total-price" value="0">
+        <input type="button" name ="confirm"  id="Confirm-order" value="confirm-Order" onclick="confirm()">
+    </div>
+
+    </body>
+</html>
