@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>booking</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="booking.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            padding: 0.25em;
+            margin: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        th, td {
+            width: 2.5em;
+        }
+        .today {
+            background-color: orange;
+            color: white;
+        }
+        .showDay {
+            background-color: #679b3d;
+            color: white;
+        }
+        .schedule {float : left; padding: 20px; margin-top: 100px;}
+        .timetable { padding: 20px; display: none;}
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar flex-md-nowrap navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <!-- <img src="images/logo.png" class="position-fixed sticky-top col-xl-2 col-lg-2 col-md-2 col-sm-3 col-2"> -->
+                <button class="navbar-toggler ms-auto" 
+                        type="button" 
+                        data-toggle="collapse" 
+                        data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" 
+                        aria-expanded="false" 
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item active" style="text-align: right;">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item active" style="text-align: right;">
+                            <a class="nav-link" href="#">Shows</a>
+                        </li>
+                        <li class="nav-item active" style="text-align: right;">
+                            <a class="nav-link" href="#">Menu</a>
+                        </li>
+                        <li class="nav-item active" style="text-align: right;">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item active" style="text-align: right;">
+                            <a class="nav-link" href="#">Book a table now!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<div class = "container p-5">
+    <div class = "row">
+
+<div id="schedule" class = "schedule col-3">
+</div>
+
+<div class = "table-responsive col-2 d-none m-5" id = "timetable">
+    <table> 
+        <tr>
+             <th>Hour</th> 
+             <th>Availability</th> 
+        </tr>
+        <tr> 
+             <td>14:00</td> 
+             <td id ="14" class = "btn border" style = "width:100%;height:100%"></td> 
+        </tr> 
+        <tr> 
+            <td>15:00</td> 
+            <td id ="15"  class = "btn border" style = "width:100%"></td>
+        </tr> 
+        <tr> 
+            <td>16:00</td> 
+            <td id ="16"  class = "btn border" style = "width:100%"></td>
+        </tr> 
+        <tr> 
+            <td>17:00</td> 
+            <td id ="17"  class = "btn border" style = "width:100%"></td>
+        </tr> 
+        <tr> 
+            <td >18:00</td> 
+            <td id ="18"  class = "btn border" style = "width:100%"></td>
+        </tr> 
+        <tr> 
+            <td>19:00</td> 
+            <td id ="19"  class = "btn border" style = "width:100%"></td>
+        </tr> 
+        <tr> 
+            <td>20:00</td> 
+            <td id ="20"  class = "btn border" style = "width:100%"></td>
+        </tr> 
+    </table>
+</div>
+
+<!-- <div>There are only shows at 20:00 Fridays and Saturdays</div> -->
+
+        <div class = "col-3" onclick="selectDay([18, 12, 2020]);makeLessOpaque()">
+        <img src="images/capoeira.jpg" alt="Capoeira" width="300" heigth="300">
+        <p>Brazilian martial art that combines elements of dance, acrobatics, and music. It was developed by enslaved Africans in Brazil at the beginning of the 16th century.</p>
+        </div>
+    </div>
+    <div class = "row d-flex flex-row-reverse">
+        <div class = "col-3" onclick="selectDay([19, 12, 2020]);makeLessOpaque()">
+        <img src="images/Fire_breathing.jpg" alt="Fire breathing" width="300" heigth="300">
+        <p>Espectacular show of Ahmed "the fire master".</p>
+        </div>
+    </div>
+    <div class = "row d-flex flex-row-reverse">
+        <div class = "col-3" onclick="selectDay([25, 12, 2020]);makeLessOpaque()">
+        <img src="images/xmas.jpg" alt="xmas" width="300" heigth="300">
+        <p>Our Christmas special is a special show with our best performers for your and your family.</p>
+        </div>
+    </div>
+    <div class = "row d-flex flex-row-reverse">
+        <div class = "col-3" onclick="selectDay([26, 12, 2020]);makeLessOpaque()">
+        <img src="images/xmas2.jpg" alt="more xmas" width="300" heigth="300">
+        <p>Did you miss our Christmas special?  You have a second chance to enjoy with us.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script src="booking.js"></script>
+<script>
+    window.onload = function(){
+        calendar([13,12,2020]);
+    }
+</script>
+</body>
+</html>
