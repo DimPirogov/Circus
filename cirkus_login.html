@@ -13,7 +13,7 @@
 <body>
     <div class="container">
         <div class="mt-5">
-            <form>
+            <form name="login">
                 <div class="form-group row justify-content-md-center">
                 <div class="col-2">
                     <a href="index.html">
@@ -29,7 +29,7 @@
                 <div class="form-group row justify-content-md-center">
                     <div class="col-sm-6">
                         <input type="password" class="form-control" id="passwordInput" placeholder="password">
-                        <button type="submit" class="btn btn-primary mt-3 justify-content-md-center">Log in</button>
+                        <button type="submit" onclick="check(this.form)" class="btn btn-primary mt-3 justify-content-md-center">Log in</button>
                     </div>
                 </div>
             </form>
