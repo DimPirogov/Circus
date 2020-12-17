@@ -8,6 +8,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="cirkus.css">
     <script src="login.js"></script>
+
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="icon" href="images/logo.png" sizes="64x64">
+    <link rel="apple-touch-icon" href="images/logo.png">
 </head>
 
 <body>
@@ -29,33 +33,33 @@
             <div class="col-3">
                 <div name="order" id="table1">
                     <p class="text-start">
-                        <button type="submit" onclick="window.location.href='about.html'" class="btn btn-primary" id="eraseTable1" style="display: none">Reset</button>
+                        <button type="submit" onclick="toStartOver1()" class="btn btn-primary" id="eraseTable1" style="display: none">Clear table</button>
                     <span class="text-end fs-4 fw-bold">Table 1</span>
                     </p>
-                    <input type="checkbox" id="table1_1" name="table1">
-                        <label for="table1_1" class="strikethrough" name="menuItem">Sallad</label><br>
-                    <input type="checkbox" id="table1_2" name="table1">
-                        <label for="table1_2" class="strikethrough" name="menuItem">Sallad2</label><br>
-                    <input type="checkbox" id="table1_3" name="table1">
-                        <label for="table1_3" class="strikethrough" name="menuItem">Sallad3</label><br>
-                    <input type="checkbox" id="table1_4" name="table1">
-                        <label for="table1_4" class="strikethrough" name="menuItem">Sallad4</label><br>
-                    <input type="checkbox" id="table1_5" name="table1">
-                        <label for="table1_5" class="strikethrough" name="menuItem">Lunch1</label><br>
-                    <input type="checkbox" id="table1_6" name="table1">
-                        <label for="table1_6" class="strikethrough" name="menuItem">Lunch2</label><br>
-                    <input type="checkbox" id="table1_7" name="table1">
-                        <label for="table1_7" class="strikethrough" name="menuItem">Lunch3</label><br>
-                    <input type="checkbox" id="table1_8" name="table1">
-                        <label for="table1_8" class="strikethrough" name="menuItem">Lunch4</label><br>
-                    <input type="checkbox" id="table1_9" name="table1">
-                        <label for="table1_9" class="strikethrough" name="menuItem">Dessert</label><br>
-                    <input type="checkbox" id="table1_10" name="table1">
-                        <label for="table1_10" class="strikethrough" name="menuItem">Dessert2</label><br>
-                    <input type="checkbox" id="table1_11" name="table1">
-                        <label for="table1_11" class="strikethrough" name="menuItem">Dessert3</label><br>
-                    <input type="checkbox" id="table1_12" name="table1">
-                        <label for="table1_12" class="strikethrough" name="menuItem">Dessert4</label><br>
+                    <input type="checkbox" id="11" name="table1" onchange="check1(this)">
+                        <label id="111" for="11" class="strikethrough" name="menuItem">Sallad1</label><br>
+                    <input type="checkbox" id="12" name="table1" onchange="check1(this)">
+                        <label id="112" for="12" class="strikethrough" name="menuItem">Sallad2</label><br>
+                    <input type="checkbox" id="13" name="table1" onchange="check1(this)">
+                        <label id="113" for="13" class="strikethrough" name="menuItem">Sallad3</label><br>
+                    <input type="checkbox" id="14" name="table1" onchange="check1(this)">
+                        <label id="114" for="14" class="strikethrough" name="menuItem">Sallad4</label><br>
+                    <input type="checkbox" id="15" name="table1" onchange="check1(this)">
+                        <label id="115" for="15" class="strikethrough" name="menuItem">Lunch1</label><br>
+                    <input type="checkbox" id="16" name="table1" onchange="check1(this)">
+                        <label id="116" for="16" class="strikethrough" name="menuItem">Lunch2</label><br>
+                    <input type="checkbox" id="17" name="table1" onchange="check1(this)">
+                        <label id="117" for="17" class="strikethrough" name="menuItem">Lunch3</label><br>
+                    <input type="checkbox" id="18" name="table1" onchange="check1(this)">
+                        <label id="118" for="18" class="strikethrough" name="menuItem">Lunch4</label><br>
+                    <input type="checkbox" id="19" name="table1" onchange="check1(this)">
+                        <label id="119" for="19" class="strikethrough" name="menuItem">Dessert1</label><br>
+                    <input type="checkbox" id="20" name="table1" onchange="check1(this)">
+                        <label id="120" for="20" class="strikethrough" name="menuItem">Dessert2</label><br>
+                    <input type="checkbox" id="21" name="table1" onchange="check1(this)">
+                        <label id="121" for="21" class="strikethrough" name="menuItem">Dessert3</label><br>
+                    <input type="checkbox" id="22" name="table1" onchange="check1(this)">
+                        <label id="122" for="22" class="strikethrough" name="menuItem">Dessert4</label><br>
                 </div>
             </div>
             <div class="col-3">
@@ -65,7 +69,23 @@
                 <div name="order" id="table3"><p class="text-end fs-4 fw-bold">Table 3</p></div>
             </div>
             <div class="col-3">
-                <div name="order" id="table4"><p class="text-end fs-4 fw-bold">Table 4</p></div>
+                <div name="order" id="table4">
+                    <p class="text-start">
+                        <button type="submit" onclick="toStartOver4()" class="btn btn-primary" id="eraseTable4" style="display: none">Clear table</button>
+                    <span class="text-end fs-4 fw-bold">Table 4</span>
+                    </p>
+                    <input type="checkbox" id="41" name="table4" onchange="check4(this)">
+                        <label id="141" for="41" class="strikethrough" name="menuItem">Sallad1</label><br>
+                    <input type="checkbox" id="42" name="table4" onchange="check4(this)">
+                        <label id="142" for="42" class="strikethrough" name="menuItem">Sallad2</label><br>
+                    <input type="checkbox" id="43" name="table4" onchange="check4(this)">
+                        <label id="143" for="43" class="strikethrough" name="menuItem">Sallad3</label><br>
+                    <input type="checkbox" id="44" name="table4" onchange="check4(this)">
+                        <label id="144" for="44" class="strikethrough" name="menuItem">Lunch1</label><br>
+                    <input type="checkbox" id="45" name="table4" onchange="check4(this)">
+                        <label id="145" for="45" class="strikethrough" name="menuItem">Lunch2</label><br>
+                    <input type="checkbox" id="46" name="table4" onchange="check4(this)">
+                        <label id="146" for="46" class="strikethrough" name="menuItem">Lunch3</label><br>
             </div>
             
         </div>
@@ -74,7 +94,36 @@
                 <div name="order" id="table5"><p class="text-end fs-4 fw-bold">Table 5</p></div>
             </div>
             <div class="col-3">
-                <div name="order" id="table6"><p class="text-end fs-4 fw-bold">Table 6</p></div>
+                <div name="order" id="table6">
+                    <p class="text-start">
+                        <button type="submit" onclick="toStartOver6()" class="btn btn-primary" id="eraseTable6" style="display: none">Clear table</button>
+                    <span class="text-end fs-4 fw-bold">Table 6</span>
+                    </p>
+                    <input type="checkbox" id="61" name="table6" onchange="check6(this)">
+                        <label id="161" for="61" class="strikethrough" name="menuItem">Sallad1</label><br>
+                    <input type="checkbox" id="62" name="table6" onchange="check6(this)">
+                        <label id="162" for="62" class="strikethrough" name="menuItem">Sallad2</label><br>
+                    <input type="checkbox" id="63" name="table6" onchange="check6(this)">
+                        <label id="163" for="63" class="strikethrough" name="menuItem">Sallad3</label><br>
+                    <input type="checkbox" id="64" name="table6" onchange="check6(this)">
+                        <label id="164" for="64" class="strikethrough" name="menuItem">Sallad4</label><br>
+                    <input type="checkbox" id="65" name="table6" onchange="check6(this)">
+                        <label id="165" for="65" class="strikethrough" name="menuItem">Lunch1</label><br>
+                    <input type="checkbox" id="66" name="table6" onchange="check6(this)">
+                        <label id="166" for="66" class="strikethrough" name="menuItem">Lunch2</label><br>
+                    <input type="checkbox" id="67" name="table6" onchange="check6(this)">
+                        <label id="167" for="67" class="strikethrough" name="menuItem">Lunch3</label><br>
+                    <input type="checkbox" id="68" name="table6" onchange="check6(this)">
+                        <label id="168" for="68" class="strikethrough" name="menuItem">Lunch4</label><br>
+                    <input type="checkbox" id="69" name="table6" onchange="check6(this)">
+                        <label id="169" for="69" class="strikethrough" name="menuItem">Dessert1</label><br>
+                    <input type="checkbox" id="70" name="table6" onchange="check6(this)">
+                        <label id="170" for="70" class="strikethrough" name="menuItem">Dessert2</label><br>
+                    <input type="checkbox" id="71" name="table6" onchange="check6(this)">
+                        <label id="171" for="71" class="strikethrough" name="menuItem">Dessert3</label><br>
+                    <input type="checkbox" id="72" name="table6" onchange="check6(this)">
+                        <label id="172" for="72" class="strikethrough" name="menuItem">Dessert4</label><br>
+                </div>
             </div>
             <div class="col-3">
                 <div name="order" id="table7"><p class="text-end fs-4 fw-bold">Table 7</p></div>

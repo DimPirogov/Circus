@@ -5,20 +5,22 @@
 body{background-color: #f4e7b3;}
 .btn-primary{background-color:#557475;border-color:#557475;}
 .btn-primary:hover{background-color: #5c1113;border-color:#5c1113}
-div[name="order"]{background-color: #f8b936}
+.btn-primary:focus{background-color:#c42b26;border-color:#c42b26}
 
 /*--------------------------------*/
 /*-------CIRKUS LOGIN ENDS--------*/
 /*--------------------------------*/
 
+
 /*--------------------------------*/
 /*-------CIRKUS KITCHEN STARTS----*/
 /*--------------------------------*/
 
+div[name="order"]{background-color: #f8b936}
 input[type=checkbox]:checked + label.strikethrough{
     text-decoration: line-through;
 }
 
 /*--------------------------------*/
-/*-------CIRKUS KITCHEN STARTS----*/
+/*-------CIRKUS KITCHEN ENDS----*/
 /*--------------------------------*/
