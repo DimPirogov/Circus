@@ -3,17 +3,18 @@
         <Title>Circus Restaurang</title>
             <link rel="stylesheet" type="text/css" href="tablet.css">
             <script src="tablet.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
     <!-- Header -->
     <header id="myHeader">
             <img src="design_ideas/logo.png">
-            <nav class="nav-bar">
+            <nav class="nav-bar" >
                 <a href="#"  onclick="menu('starter')"> Starters </a> |
                 <a href="#" onclick="menu('maincourse')"> MainCourse </a> |
                 <a href="#" onclick="menu('desserts')" > Desserts </a>|
-                <a href="#" onclick="menu('drinks')"> Drinks </a> |
+                <a href="#"onclick="menu('drinks')"> Drinks </a> |
                 <a href="#" onclick="menu('kidmenu')"> Kids menu </a> 
             </nav>
     </header> 
@@ -151,24 +152,7 @@
                 </div>
             </div>
 
-            <div class="item" id='s8'>
-                <div class="item-img">
-                    <div class="img">
-                        <img src="food/maincourse/Heart -Pizza.jpg">
-                    </div>
-                    <div class="itemcount">
-                        <img src="food/Plus"  onclick="plus('s8',true)">
-                        <input type="text" id="count" value="0" >
-                        <img src="food/minus.jpg" onclick="plus('s8',false)">   
-                    </div>
-                </div>
-                    
-                <div class="itemdescription">
-                    <img src="food/vege.png" width="50px" height="50px">
-                    <span  id="sname">Hjärta Pizza  99kr</span>
-                    <input type="hidden" id="foodid" value="99">
-                </div>
-            </div>
+            
 
             <div class="item" id='s9'>
                 <div class="item-img">
@@ -188,24 +172,7 @@
                 </div>
             </div>
 
-            <div class="item" id='s10'>
-                <div class="item-img">
-                    <div class="img">
-                        <img src="food/maincourse/saglikli-pizza.jpg">
-                    </div>
-                    <div class="itemcount">
-                        <img src="food/Plus" onclick="plus('s10',true)">
-                        <input type="text" id="count" value="0" >
-                        <img src="food/minus.jpg" onclick="plus('s10',false)"> 
-                    </div>
-                </div>
-                    
-                <div class="itemdescription">
-                    <img src="food/vege.png" width="50px" height="50px">
-                    <span  id="sname">Saglikli-pizza  99Kr</span>
-                    <input type="hidden" id="foodid" value="99">
-                </div>
-            </div>
+            
             <div class="item" id='s11'>
                 <div class="item-img">
                     <div class="img">
@@ -240,6 +207,53 @@
                     <img src="food/vegan.png" width="50px" height="50px">
                     <span id="sname">Veg-Pasta  89Kr</span>
                     <input type="hidden" id="foodid" value="89">
+                </div>
+            </div>
+            <div class="item" id='s8'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/maincourse/Heart -Pizza.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus"  onclick="plus('s8',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s8',false)">   
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <span  id="sname">Hjärta Pizza  99kr</span>
+                    <input type="hidden" id="foodid" value="99">
+                    <br>
+                    <ul id="Ingredients">
+                        <li>svamp</li>
+                        <li>kcyclink</li>
+                        <li>Beef</li>
+                        <li>Veg</li>
+                        <li>Pork</li>
+                    </ul>
+                    <button id="showIngreButton">Add</button>
+                    <div id="selectedingredients"></div>
+                    <script>$(attachEvents())</script>
+                    
+                </div>
+            </div>
+            <div class="item" id='s10'>
+                <div class="item-img">
+                    <div class="img">
+                        <img src="food/maincourse/saglikli-pizza.jpg">
+                    </div>
+                    <div class="itemcount">
+                        <img src="food/Plus" onclick="plus('s10',true)">
+                        <input type="text" id="count" value="0" >
+                        <img src="food/minus.jpg" onclick="plus('s10',false)"> 
+                    </div>
+                </div>
+                    
+                <div class="itemdescription">
+                    <img src="food/vege.png" width="50px" height="50px">
+                    <span  id="sname">Saglikli-pizza  99Kr</span>
+                    <input type="hidden" id="foodid" value="99">
                 </div>
             </div>
         </div>

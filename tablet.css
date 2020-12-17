@@ -138,4 +138,19 @@ font-size: 30px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: antiquewhite;
 }
+#showIngreButton{
+  width:"30px";
+  height:"20px";
+  background-color:5c1113 ;
+  border-color:5c1113 ;
+  color: antiquewhite;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.nav-bar a:active {
+  color:c42b26 ; /* Link text will be green after visited. */
+  background: f8b936;; /* Background of link will be pink after visited. */
+}
 /* Css for circus-Tablet-version */

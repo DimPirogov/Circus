@@ -90,6 +90,7 @@ var divs = document.querySelectorAll('.container');
   {
     div.classList.add("hidden");
     div.classList.remove("display");
+    
   }
 });
 }
@@ -118,5 +119,25 @@ function confirm()
 }
 
 
+//Function to select ingredients for hjärta pizza 
+function attachEvents() {
+    $("#Ingredients li").bind( "click", function() {
+        if($(this).hasClass("active"))
+       {
+        $(this).removeClass("active")
+        $(this).css("background-color","");
+       }
+       else
+       {
+        $(this).addClass("active")
+        $(this).css("background-color","f4e7b3");
+       }
+      });
+    
+    $('#showIngreButton').on("click",function() {
+        let selectedItems = $(" #Ingredients  li.active").toArray().map(li => li.textContent);
+        $("#selectedingredients").text(selectedItems);   
+    });    
+}
 
 
