@@ -26,6 +26,6 @@ function menuShow(arg) {
     else
         document.getElementById("kids").style.display = "none";
         
-
+    changeFooter();
 }
 

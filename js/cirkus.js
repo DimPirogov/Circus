@@ -39,9 +39,20 @@ function resizeFuntion() {
         document.getElementById("logoImg").width=logoImgMaxWidth;
         document.getElementById("logoImg").hight=logoImgMaxHight;
     }
+    changeFooter();
 }
 function loadFunction() {
     resizeFuntion();
     scrollFunction();
 }
 
+function changeFooter() {
+    let extraPadding=180;
+
+    let d=document.getElementById("cirkusMain").scrollHeight + extraPadding-document.body.clientHeight;
+    if(d<0)
+        document.getElementById("cirkusFoot").classList.add("fixed-bottom");
+    else
+      document.getElementById("cirkusFoot").classList.remove("fixed-bottom");
+
+}
