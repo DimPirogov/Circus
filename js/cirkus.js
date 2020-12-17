@@ -15,11 +15,11 @@ window.addEventListener("load", loadFunction);
 
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     document.getElementById("cirkusNavBar").style.opacity = 1;
-    document.getElementById("logoImg").style.opacity = 0.10;
+    document.getElementById("logoImg").style.opacity = 1;
   } else {
-    document.getElementById("cirkusNavBar").style.opacity = 0.60;
+    document.getElementById("cirkusNavBar").style.opacity = 0.90;
     document.getElementById("logoImg").style.opacity = 1;
   }
 }

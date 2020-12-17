@@ -7,11 +7,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/cirkus.js"></script>
+    <script src="js/menu.js"></script>
 </head>
 <body>
 
 <header>
-    <nav class="navbar flex-md-nowrap navbar-expand-md navbar-dark fixed-top bg-dark" id="cirkusNavBar">
+    <nav class="navbar flex-md-nowrap navbar-expand-md navbar-dark fixed-top" id="cirkusNavBar" style="background-color: #2b3a3b;">
         <div class="container">
             <img src="images/logo.png" class="position-fixed sticky-top" id="logoImg" style="display: none;">
             <img src="images/logo.png" width="64" height="69">
@@ -30,20 +31,20 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item active" style="text-align: right;">
-                        <a class="nav-link" href="#">Shows</a>
+                        <a class="nav-link" href="index.html#shows">Shows</a>
                     </li>
                     <li class="nav-item dropdown" style="text-align: right;">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Menu</a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown"  style="text-align: right;">
-                            <a class="dropdown-item" href="#">Starters</a>
-                            <a class="dropdown-item" href="#">Main Courses</a>
-                            <a class="dropdown-item" href="#">Desserts</a>
-                            <a class="dropdown-item" href="#">Drinks</a>
-                            <a class="dropdown-item" href="#">Kids Menu</a>
+                            <a class="dropdown-item" href="#starters" onclick="menuShow('starters');">Starters</a>
+                            <a class="dropdown-item" href="#main"     onclick="menuShow('main');"    >Main Courses</a>
+                            <a class="dropdown-item" href="#desserts" onclick="menuShow('desserts');">Desserts</a>
+                            <a class="dropdown-item" href="#drinks"   onclick="menuShow('drinks');"  >Drinks</a>
+                            <a class="dropdown-item" href="#kids"     onclick="menuShow('kids');"    >Kids Menu</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Full Menu</a>
+                            <a class="dropdown-item" href="#starters" onclick="menuShow('all');"     >Full Menu</a>
                         </div>        
                     </li>
                     <li class="nav-item active" style="text-align: right;">
@@ -59,8 +60,17 @@
 </header>
 
 <main role="main">
-    <div class="container mt-5">
-        <h3>Starters:</h3>
+    <div class="container topmargine" style="text-align: right;">
+        <button type="submit" class="btn btn-primary" onclick="menuShow('starters');">Starters</button>
+        <button type="submit" class="btn btn-primary" onclick="menuShow('main');">    Main Courses</button>
+        <button type="submit" class="btn btn-primary" onclick="menuShow('desserts');">Desserts</button>
+        <button type="submit" class="btn btn-primary" onclick="menuShow('drinks');">  Drinks</button>
+        <button type="submit" class="btn btn-primary" onclick="menuShow('kids');">    Kids Menu</button>
+        <button type="submit" class="btn btn-primary" onclick="menuShow('all');">     Full Menu</button>
+    </div>
+
+    <div class="container mt-3" id="starters" style="display: none;">
+        <h3><a name="starters">Starters:</a></h3>
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 border border-light p-1 mb-2">
                 <img src="menu/starter/11.jpg" class="img-fluid shadow p-0 mb-1 rounded">
@@ -113,8 +123,8 @@
         </div>
     </div>
 
-    <div class="container mt-5">
-        <h3>Main Courses:</h3>
+    <div class="container mt-3" id="main" style="display: block;">
+        <h3><a name="main">Main Courses:</a></h3>
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 border border-light p-1 mb-2">
                 <img src="menu/main/06.jpg" class="img-fluid shadow p-0 mb-1 rounded">
@@ -179,8 +189,8 @@
         </div>
     </div>
 
-    <div class="container mt-5">
-        <h3>Desserts:</h3>
+    <div class="container mt-3" id="desserts" style="display: none;">
+        <h3><a name="desserts">Desserts:</a></h3>
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 border border-light p-1 mb-2">
                 <img src="menu/dessert/04.jpg" class="img-fluid shadow p-0 mb-1 rounded">
@@ -233,8 +243,8 @@
         </div>
     </div>
 
-    <div class="container mt-5">
-        <h3>Drinks:</h3>
+    <div class="container mt-3" id="drinks" style="display: none;">
+        <h3><a name="drinks">Drinks:</a></h3>
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 border border-light p-1 mb-2">
                 <img src="menu/drinks/05.jpg" class="img-fluid shadow p-0 mb-1 rounded">
@@ -275,8 +285,8 @@
         </div>
     </div>
 
-    <div class="container mt-5">
-        <h3>Kids Menu:</h3>
+    <div class="container mt-3" id="kids" style="display: none;">
+        <h3><a name="kids">Kids Menu:</a></h3>
         <div class="row">
             <div class="col-lg-3 col-md-4 col-sm-6 col-12 border border-light p-1 mb-2">
                 <img src="menu/kids/03.jpg" class="img-fluid shadow p-0 mb-1 rounded">
@@ -303,6 +313,10 @@
                 Tropical Punch
             </div>
         </div>
+    </div>
+
+    <div class="mt-3 text-light" style="text-align: center; background-color: #2b3a3b;">
+        Circus Restaurang - Gamla Stan
     </div>
 
 </main>

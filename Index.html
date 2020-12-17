@@ -11,7 +11,7 @@
 <body>
 
 <header>
-    <nav class="navbar flex-md-nowrap navbar-expand-md navbar-dark fixed-top bg-dark" id="cirkusNavBar">
+    <nav class="navbar flex-md-nowrap navbar-expand-md navbar-dark fixed-top" id="cirkusNavBar" style="background-color: #2b3a3b;">
         <div class="container">
             <img src="images/logo.png" class="position-fixed sticky-top" id="logoImg">
             <button class="navbar-toggler ms-auto" 
@@ -29,10 +29,10 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item active" style="text-align: right;">
-                        <a class="nav-link" href="#">Shows</a>
+                        <a class="nav-link" href="#shows">Shows</a>
                     </li>
                     <li class="nav-item active" style="text-align: right;">
-                        <a class="nav-link" href="#">Menu</a>
+                        <a class="nav-link" href="menu.html">Menu</a>
                     </li>
                     <li class="nav-item active" style="text-align: right;">
                         <a class="nav-link" href="#">About Us</a>
@@ -55,7 +55,7 @@
     <div class="container">
         <div class="row p-3">
             <div class="col-md-7 yellow-bglc">
-                <h3>Next Upcoming Shows!</h3>
+                <h3><a name="shows">Next Upcoming Shows!</a></h3>
                 <div class="text-white p-3 m-1 rounded blue-bglc">
                     <h4>Brazilian Capoeira (2020-12-18)</h4>
                     <img src="images/capoeira.jpg" class="img-fluid shadow p-0 mb-1 rounded">
@@ -99,7 +99,7 @@
             </div>
 
             <div class="col-md-5 red-bglc">
-                <h4>This week's lunches:</h4>
+                <h4><a name="week">This week's lunches:</a></h4>
                 <div class="text-white p-3 m-1 rounded blue-bgdc">
                     <h3>Monday: Veggy Wrapps</h3>
                     <img src="dishes/mon.jpg" class="img-fluid shadow p-0 mb-1 rounded">
@@ -150,11 +150,16 @@
                     </p>
                 </div>
                 <p align="right">
-                    <button type="submit" class="btn btn-primary">Checkout our menu!</button>
+                    <button type="submit" class="btn btn-primary" onclick="window.open('menu.html');">Checkout our menu!</button>
                 </p>
         </div>
         </div>
     </div>
+
+    <div class="mt-3 text-light" style="text-align: center; background-color: #2b3a3b;">
+        Circus Restaurang - Gamla Stan
+    </div>
+
 </main>
 </body>
 </html>
