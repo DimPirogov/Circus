@@ -2,7 +2,7 @@
 //login page JS-----
 //------------------
 function check(form){
-    if(form.userNameInput.value == "test" && form.passwordInput.value == "cirkus"){
+    if(form.userNameInput.value == "admin" && form.passwordInput.value == "cirkus"){
         window.open('about.html');
     }
     else{
