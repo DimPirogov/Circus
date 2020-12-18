@@ -150,7 +150,7 @@ font-size: 30px;
 
 
 .nav-bar a:active {
-  color:c42b26 ; /* Link text will be green after visited. */
-  background: f8b936;; /* Background of link will be pink after visited. */
+  color:c42b26 ; 
+  background: f8b936;; 
 }
 /* Css for circus-Tablet-version */
