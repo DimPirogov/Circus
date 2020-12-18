@@ -86,14 +86,36 @@ img.bor {
   box-shadow: 0px 0px 8px #6a6a6a;
 }
 
-body{background-color: #f4e7b3;}
-.btn-primary{background-color:#557475;border-color:#557475}
-.btn-primary:hover{background-color: #5c1113;border-color:#5c1113}
-
-
 /*
   .jumbotron .container {
     z-index: 2;
     position: relative;
   }
 */
+
+/*--------------------------------*/
+/*-------CIRKUS LOGIN STARTS------*/
+/*--------------------------------*/
+
+body{background-color: #f4e7b3;}
+.btn-primary{background-color:#557475;border-color:#557475;}
+.btn-primary:hover{background-color: #5c1113;border-color:#5c1113}
+.btn-primary:focus{background-color:#de292e;border-color:#de292e}
+
+/*--------------------------------*/
+/*-------CIRKUS LOGIN ENDS--------*/
+/*--------------------------------*/
+
+
+/*--------------------------------*/
+/*-------CIRKUS KITCHEN STARTS----*/
+/*--------------------------------*/
+
+div[name="order"]{background-color: #f8b936}
+input[type=checkbox]:checked + label.strikethrough{
+    text-decoration: line-through;
+}
+
+/*--------------------------------*/
+/*-------CIRKUS KITCHEN ENDS----*/
+/*--------------------------------*/
