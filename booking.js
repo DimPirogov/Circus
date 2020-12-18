@@ -27,19 +27,19 @@ function calendar(arr) {
     console.log("days of he month: "+daysOfAMonth+"   first day: "+firstDay);
 
     $("#schedule").append(
-        $(`<table>`)
+        $(`<table class ="table table-responsive table-striped bg-white table-hover" style = "width: 25em;">`)
             .append($("<caption>").text(monthNames[month]+" "+year.toString()))
             .append(
                 $("<tbody>")
                     .append(
                         $("<tr>")
-                            .append($("<th>").text("Mon"))
-                            .append($("<th>").text("Tue"))
-                            .append($("<th>").text("Wed"))
-                            .append($("<th>").text("Thu"))
-                            .append($("<th>").text("Fri"))
-                            .append($("<th>").text("Sat"))
-                            .append($("<th>").text("Sun"))
+                            .append($(`<th style="width: 14.3%;">`).text("Mon"))
+                            .append($(`<th style="width: 14.3%;">`).text("Tue"))
+                            .append($(`<th style="width: 14.3%;">`).text("Wed"))
+                            .append($(`<th style="width: 14.3%;">`).text("Thu"))
+                            .append($(`<th style="width: 14.3%;">`).text("Fri"))
+                            .append($(`<th style="width: 14.3%;">`).text("Sat"))
+                            .append($(`<th style="width: 14.3%;">`).text("Sun"))
                     )
                     .append(function () {
                             let result="";
@@ -55,13 +55,13 @@ function calendar(arr) {
                                 }
                                 if(i!=day){
                                     if(weekCount==5 || weekCount==6){
-                                        result=result.concat(`<td class=\"showDay\" onclick=\"selectDay([${i},${month},${year}])\">`);
+                                        result=result.concat(`<td class=\"bg-info text-white\" onclick=\"selectDay([${i},${month},${year}])\">`);
                                     }
                                     else
                                     result=result.concat(`<td onclick=\"selectDay([${i},${month},${year}])\">`);
                                 }
                                 else
-                                    result=result.concat(`<td class=\"today\" onclick=\"selectDay([${i},${month},${year}])\">`);
+                                    result=result.concat(`<td class=\"bg-warning text-white\" onclick=\"selectDay([${i},${month},${year}])\">`);
                                 result=result.concat(i.toString()).concat("</td>");
 
                                 if(weekCount==7) {
@@ -87,8 +87,8 @@ function selectDay([day, month, year]) {
     console.log("New day selected");
     selectedDay = [day, month, year];
     console.log(selectedDay);
-    // document.getElementById("timetable").style.display = "block";
     $("#timetable").removeClass("d-none").addClass("d-block");
+    $("#hiddenText").removeClass("d-none").addClass("d-block");
     checkAvailability(selectedDay);
 }
 
