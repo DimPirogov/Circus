@@ -1,0 +1,177 @@
+<html>
+<head>
+    <title>Restaurang Cirkus</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="cirkus.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/cirkus-index.js"></script>
+
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="icon" href="images/logo.png" sizes="64x64">
+    <link rel="apple-touch-icon" href="images/logo.png">    
+<body>
+
+<header>
+    <nav class="navbar flex-md-nowrap navbar-expand-md navbar-dark fixed-top" id="cirkusNavBar" style="background-color: #2b3a3b;">
+        <div class="container">
+            <img src="images/logo.png" class="position-fixed sticky-top" id="logoImg">
+            <button class="navbar-toggler ms-auto" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav ms-md-auto">
+                    <li class="nav-item active" style="text-align: right;">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item active" style="text-align: right;">
+                        <a class="nav-link" href="#shows">Shows</a>
+                    </li>
+                    <li class="nav-item active" style="text-align: right;">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item active" style="text-align: right;">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item active" style="text-align: right;">
+                        <a class="nav-link" href="booking.html">Book a table now!</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<main role="main">
+    <div class="jumbotron">
+        <video autoplay muted loop poster="images/bg1.jpg">
+                <source src="cirkus.mp4" data-src="cirkus.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-md-7 yellow-bglc">
+                <h3><a name="shows">Next Upcoming Shows!</a></h3>
+                <div class="text-white p-3 m-1 rounded blue-bglc">
+                    <h4>Brazilian Capoeira (2020-12-18)</h4>
+                    <img src="images/capoeira.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p>
+                    Brazilian martial art that combines elements of dance, acrobatics, and music. It was developed by enslaved Africans in Brazil at the beginning of the 16th century.
+                    </p>
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h4>Fire reathing (2002-12-19)</h4>
+                    <img src="images/Fire_breathing.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p>
+                    Espectacular show of Ahmed "the fire master".
+                    </p>
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bglc">
+                    <h4>Christmas special (2002-12-25)</h4>
+                    <img src="images/xmas.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p>
+                    Our Christmas special is a the seasson's show with our best performers.  Come and enjoy with your family.
+                    </p>
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h4>Xmas second chance (2002-12-26)</h4>
+                    <img src="images/xmas2.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p>
+                    Did you miss our Christmas special?  You have a second chance to enjoy us.
+                    </p>
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-5 red-bglc">
+                <h4><a name="week">This week's lunches:</a></h4>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h3>Monday: Veggy Wrapps</h3>
+                    <img src="dishes/mon.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bglc">
+                    <h3>Tuesday: Grilled Lamb and Feta Pita Sandwiches</h3>
+                    <img src="dishes/tue.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h3>Wednesday: Crispy Tuna Cakes</h3>
+                    <img src="dishes/wed.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bglc">
+                    <h3>Thursday: Curried Chicken Salad with Apples and Raisins</h3>
+                    <img src="dishes/thu.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h3>Friday: Avo-Tahini Toast</h3>
+                    <img src="dishes/fri.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bglc">
+                    <h3>Saturday: Orecchiette with Broccoli Rabe</h3>
+                    <img src="dishes/sat.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <div class="text-white p-3 m-1 rounded blue-bgdc">
+                    <h3>Sunday: Sicilian Aubergine Pizzas</h3>
+                    <img src="dishes/sun.jpg" class="img-fluid shadow p-0 mb-1 rounded">
+                    <p align="right">
+                        <button type="submit" class="btn btn-primary">Book now!</button>
+                    </p>
+                </div>
+                <p align="right">
+                    <button type="submit" class="btn btn-primary" onclick="window.open('menu.html');">Checkout our menu!</button>
+                </p>
+        </div>
+        </div>        
+    </div>
+</main>
+<footer class="flex-nowrap">
+    <div class="mt-1" id="cirkusFoot" style="background-color: #2b3a3b;">
+        <div class="container" style="background-color: #2b3a3b;">
+            <div class="row">
+                <div class="col-1 text-muted">Address</div>    
+                <div class="col-2 text-muted">Gatan 1<br>100 01 Stockholm<br>Sweden</div>
+                <div class="col 2 offset-2 text-muted">telefon 08-010101</div>
+                <div class="col-1 text-muted text-end">mail</div>
+                <div class="col 2 text-muted">cirkusrestaurant@cirkus.se</div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+
